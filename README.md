@@ -30,17 +30,14 @@ git clone https://github.com/YasirHussainTs/the-network.git
 cd the-network
 
 ### Install Dependencies
-```bash
 composer install
 npm install
 
 ### Create Environment File
-```bash
 cp .env.example .env
 
 
 ### Update your database credentials:
-```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -49,16 +46,12 @@ DB_USERNAME=your_db_user
 DB_PASSWORD=your_db_password
 
 ### Generate App Key
-```bash
 php artisan key:generate
 
 ### Run Migrations
-```bash
 php artisan migrate
 
 ### Serve the Application
-```bash
 php artisan serve
-
 
 ### Now open: http://localhost:8000
